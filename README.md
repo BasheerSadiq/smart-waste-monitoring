@@ -39,3 +39,25 @@
 
 
 YOLOv5-based waste bin detection and IoT alerting system
+
+
+
+---
+
+## 📊 Results
+
+| Metric | Value | Notes |
+|---|---:|---|
+| mAP@0.5 | **0.94** | 2 classes (`normal_bin`, `overflowing_bin`), img=640, YOLOv5s |
+| Precision | **0.92** | Weighted across classes |
+| Recall | **0.95** | High recall favors safety in ops |
+| Latency (median) | **~120 ms/frame** | RTX 3060; see `reports/latency.md` |
+| False alerts per hour | **0.18** | On 4 traffic cams, daylight |
+
+**Before → After** (label cleanup + retrain):  
+- mAP: **0.88 → 0.94** (+6.8%)  
+- Precision: **0.86 → 0.92** (+7.0%)  
+- Alert precision: **0.78 → 0.90** (+12 pts)
+
+> Reproduce: `python src/eval.py --data data/dataset.yaml --weights weights/best.pt`.
+
