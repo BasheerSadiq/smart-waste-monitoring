@@ -1,0 +1,9 @@
+data/images/train/.gitkeep
+data/images/val/.gitkeep
+data/labels/train/.gitkeep
+data/labels/val/.gitkeep
+data/images/sample/.gitkeep
+data/labels/sample/.gitkeep
+weights/.gitkeep
+results/.gitkeep
+media/.gitkeep
