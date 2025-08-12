@@ -22,6 +22,9 @@
 
 > Full metrics & methodology in [`reports/RESULTS.md`](reports/RESULTS.md). Reproduce with `make train && make detect`.
 
+# mp4 -> gif (requires ffmpeg and imagemagick)
+ffmpeg -i demo.mp4 -vf "fps=12,scale=960:-1:flags=lanczos" -c:v gif -f gif media/demo.gif
+
 ---
 
 ## 📸 Demo (60s)
