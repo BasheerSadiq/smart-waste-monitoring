@@ -1,4 +1,3 @@
-# smart-waste-monitoring
 
 # Smart Automated Waste Monitoring and Collection System
 
