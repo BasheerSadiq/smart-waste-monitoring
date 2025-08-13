@@ -4,7 +4,7 @@ from git import Repo
 
 YOLOV5_DIR = Path(".yolov5")
 YOLOV5_REPO = "https://github.com/ultralytics/yolov5.git"
-YOLOV5_COMMIT = "e8f3bd0"  # pin a known-good commit (update later if you like)
+YOLOV5_COMMIT = "e8f3bd0"  
 
 def ensure_yolov5():
     if not YOLOV5_DIR.exists():
